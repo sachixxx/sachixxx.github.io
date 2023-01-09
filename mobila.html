@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sachiko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/green-audio-player.min.css">
+    <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    />
+  
+    
+</head>
+<body>
+
+
+  
+
+  <script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+<script nomodule
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
+
+
+
+  <nav class="who">
+  <a href="mixi.html">
+    <div class="navl1">
+      <video type="video/mp4" webkit-playsinline playsinline muted preload="auto"  poster="https://shcandalous.s3.eu-west-2.amazonaws.com/glazun.png" loop class="vleft" src="media/glazun.mp4">
+      
+      </video>
+    </div>
+  </a>
+      
+    <a href="tracks.html"><model-viewer 
+    class="dura21"
+    
+    exposure="3"
+    light="3"
+    stage-light-intensity="2"
+    environment-intensity="0"
+    loading="eager" auto-rotate src="/media/model/nuka.gltf" width: 100px;
+    height: 100px;>
+    </model-viewer></a>
+
+    <a href="dvd.html"> <div class="navr1">
+      <video type="video/mp4" webkit-playsinline playsinline muted preload="auto"  class="vright" poster="https://shcandalous.s3.eu-west-2.amazonaws.com/cumen.png" src="media/cumen.mp4">
+        <source src="media/cumen.mov" type="video/mov"></source>
+      </video>
+    </div></a>
+  
+    <a href="sms.html">
+      <div class="navb1">
+        <video type="video/mp4" webkit-playsinline playsinline muted preload="auto" poster="https://shcandalous.s3.eu-west-2.amazonaws.com/mmss.png" class="vbutt" src="media/mmss.mp4">
+          <source src="media/mmss.mov"  type="video/mov"></source>
+        </video>
+      </div>
+    </a>
+    
+
+ 
+  </nav>
+
+
+  
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"> </script>
+        <script type="text/javascript">
+                    document.body.addEventListener('mouseover',function(e){
+                    var evt = (e.target || this);
+                    if (evt.tagName.toLowerCase() === 'video'){
+                       !!(evt.paused) && evt.play();
+                        }
+                    });
+
+                    document.body.addEventListener('mouseout',function(e){
+                      var evt = (e.target || this);
+                      if (evt.tagName.toLowerCase() === 'video'){
+                    !(evt.paused) && evt.pause();
+                      }
+                    });
+
+                window.onload = function(){
+                 window.setTimeout(function(){
+                 document.querySelector('.disclaimer').parentNode.removeChild(document.querySelector('.disclaimer'));
+                },1e4);
+                };
+        </script>
+
+
+
+
+    
+  
+
+</body>
+</html>

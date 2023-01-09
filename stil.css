@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+
+html, body { height: 100%; }
+.oblast{
+  width: 500px;
+  height: 500px;
+}
+.oblo{
+  width: 100%;
+
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+body {
+margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #ffffff;
+
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.ready-player-1, .ready-player-2, .ready-player-3, .ready-player-4 {
+margin: 24px 0;
+width: 100%;
+object-fit: cover;
+display: block;
+}
+
+nav {
+width: 100%;
+position: fixed;
+top: 2%;
+z-index: 1;
+background-color: #ffffff;
+min-height: 3em;
+overflow: hidden;
+}
+
+ul {
+width: 100%;
+text-align: center;
+}
+
+li {
+list-style: none;
+display: inline-block;
+padding: 1.7rem;
+}
+
+a {
+text-decoration: none;
+font-family: 'Rubik';
+font-size: 2.1rem;
+color: rgb(0, 0, 0);
+text-transform: uppercase;
+}
+
+ul li:hover {
+background: rgb(255, 255, 255);
+transition: all 0.5s ease-in-out;
+}
